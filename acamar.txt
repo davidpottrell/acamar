@@ -1,2 +1,32 @@
 Testing a file.
 David
+
+let word1 = 'David';
+let word2 = 'Pottrell';
+let example = `${word1} ${word2}`;
+
+document.getElementById('example1').innerText = example;
+
+const personalInformation = {
+    firstName: 'David',
+    lastName: 'Pottrell',
+    city: 'Yate',
+    state: 'Bristol',
+    postCode: 'BS37 4PG'
+};
+
+const {firstName: fn, lastName: ln} = personalInformation;
+
+document.getElementById('example2').innerText = `${fn} ${ln}`;
+
+<!DOCTYPE html>
+<html>
+    <head>
+      
+    </head>
+    <body>
+        <p id="example1"></p>
+         <p id="example2"></p>
+          <script src="index.js"></script>
+    </body>
+</html>
